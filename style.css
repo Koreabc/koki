@@ -1,0 +1,129 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.cube {
+	background-image: url("https://cdn.discordapp.com/attachments/944660074998169631/1074272243586170950/bg-pattern-desktop.jpg");
+	display: flex;
+	flex-direction: row-reverse;
+}
+img {
+	width:auto ;
+	height: 40%;
+}
+header {
+	padding-left: 125px;
+	margin-top: 20px;
+	margin-bottom:75px ;
+}
+.logo {
+	height: 90px;
+	width: auto;
+}
+h1 {
+	padding-left: 125px;
+	font-size: 60px;
+}
+.color {
+	color: hsl(0, 36%, 70%);
+	font-weight: 300;
+}
+main .title-2 {
+	font-size: 16px;
+	display: flex;
+	padding-left: 125px;
+	padding-right: 290px;
+	margin-top:20px ;
+	color: hsl(0, 36%, 70%);
+}
+form {
+	margin-top: 20px;
+	position: relative;
+	transform: translateX(-100%);
+	animation: comeinleft 0.5s ease forwards;
+}
+input {
+	background-color: transparent;
+	border: 1px solid hsl(0, 36%, 70%);
+	border-radius: 50px;
+	font-size: 16px;
+	padding: 15px 30px;
+	height: 55px;
+	width: 500px;
+	padding-left: 25px;
+	margin-left: 125px;
+	display: flex;
+	justify-content: flex-start;
+}
+input:focus {
+	border-width: 2px;
+	box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+}
+input::placeholder {
+	color: hsl(0, 36%, 68%);
+}
+form.error input{
+	border: 2px solid hsl(0, 93%, 68%);
+}
+button {
+	background-image: linear-gradient(
+		135deg,
+		hsl(0, 80%, 86%), 
+		hsl(0, 74%, 74%));
+	box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+	border-radius: 50px;
+	border: none;
+	padding:15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: opacity 0.2s ease;
+	height: 55px;
+	width: 100px;
+	left: 525px;
+}
+button:hover {
+	opacity: 0.6;
+}
+.error-icon {
+	display: block;
+	position: absolute;
+	top: 12px;
+	right: 120px;
+	left: 475px;
+}
+small {
+	padding-left: 150px;
+	display: flex;
+	justify-content: column;
+	padding-top: 10px;
+	color: hsl(0, 93%, 68%);
+}
+form.error small {
+	display: block;
+}
+
+form.error-icon {
+	display: block;
+}
+
+@keyframes comeinleft {
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes comeinright {
+	to {
+		transform: translateX(0);
+	}
+}
+@media screen and (max-width:400px) {
+	.left {
+		width: 100%;
+	}
+	.right {
+		display: none;
+	}
+}
